@@ -1,13 +1,246 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  box-shadow: 0 2px 7px rgb(34, 6, 6);
+  height: 70px;
+  padding: auto;
+  margin: auto;
+  background: rgb(245, 248, 248);
+  color: rgb(1, 20, 34);
+}
+.logo {
+  display: flex;
+  margin-left: 10px;
+  padding: auto;
+}
+.title {
+  line-height: 1.2rem;
+  font-size: 30px;
+}
+ul > li {
+  display: inline-flex;
+  list-style: none;
+  padding: 10px;
+}
+.content {
+  width: 100vw;
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
+}
+.sect {
+  width: 20%;
+  /* padding: 10px; */
+  max-height: 600px;
+  margin: 10px;
+  border: 1px solid slategray;
+  background: rgba(246, 247, 248, 0.5);
+  box-shadow: 2px 1px 3px #21222a;
+  border-radius: 10px;
+  color: rgb(10, 5, 5);
+}
+.my_cards {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+}
+.sect1 > img {
+  max-width: 100%;
+}
+.descr {
+  text-align: justify;
+}
+.sect-footer > li {
+  display: inline;
+  list-style: none;
+  padding: 10px;
+}
+.sect-main {
+  padding: 12px 15px;
+}
+.mains {
+  display: flexbox;
+}
+.sect-footer {
+  padding: 20px 10px;
+  background: tan;
+}
+.reason > li {
+  padding-block: 15px;
+  color: rgb(11, 8, 2);
+  font-size: 18px;
+  line-height: 1.2rem;
+  max-width: 25%;
+}
+.container {
+  height: auto;
+  padding: 30px 20px;
+  background: #010510;
+  color: rgb(250, 242, 242);
+}
+.footer {
+  text-align: center;
+  background: teal;
+  color: white;
+  height: 70px;
+}
+button {
+  padding: 10px;
+  font-size: 14px;
+  background: black;
+  color: white;
+  border-radius: 12px;
+}
+p {
+  font-size: 18px;
+  padding: 10px;
+}
+.value {
+  font-size: 30px;
+  font-weight: bold;
+}
+:disabled {
+  background: turquoise;
+  color: brown;
+}
+.contact-card {
+  width: 22%;
+  margin: 10px;
+  float: left;
+  border: 1px solid rgb(1, 20, 34);
+  box-shadow: 2px 1px 2px slategrey;
+}
+.contact-card > img {
+  width: 100%;
+  height: 300px;
+}
+.contacts {
+  display: flex;
+  padding: 10px;
+}
+.class-info {
+  display: flex;
+}
+.contact-elemnt {
+  width: 100%;
+  margin: 10px;
+  justify-content: space-around;
+}
+.jokes {
+  display: flexbox;
+  padding: 10px;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: justify;
+}
+.arrayObject {
+  margin: 20px;
+  padding: 10px;
+}
+.state {
+  justify-content: center;
+  align-items: center;
+  background: #010510;
+  color: aliceblue;
+  width: 200px;
+  position: absolute;
+}
+.state-title {
+  text-align: center;
+}
+.state-value {
+  width: 70px;
+  height: 70px;
+  margin: 30%;
+  padding: 20px;
+  border-radius: 50%;
+  background: white;
+  color: #010510;
+  text-align: center;
+}
+.arrayObject {
+  display: flex;
+  justify-content: space-between;
+}
+.counter {
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.counter-minus {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  float: left;
+  margin-left: 20px;
+  margin-top: 26px;
+  text-align: center;
+}
+.counter-add {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-right: 40px;
+  margin-bottom: 56px;
+  font-size: 12px;
+  float: right;
+  padding: 12px;
+}
+.array-pract {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 220px;
+}
+.yes-content {
+  padding: 10px;
+  margin-bottom: 30px;
+  margin-right: 40px;
+  align-items: center;
+}
+.counter--count {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid rgb(51, 22, 22);
+  background-color: rgb(249, 245, 245);
+  color: rgb(7, 3, 3);
+  text-align: center;
+
+  margin-left: 40px;
+}
+.todo-content {
+  border: 1px solid #21222a;
+  padding: 20px;
 }
